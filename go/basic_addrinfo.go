@@ -6,7 +6,7 @@ import (
 )
 
 
-func main() {
+func addressInfo() {
 	hostname := "example.com"
 	
 	ips, err := net.LookupIP(hostname)
@@ -18,5 +18,4 @@ func main() {
 	for _, ip := range ips {
 		fmt.Println(ip.String())
 	}
-
 }
