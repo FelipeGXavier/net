@@ -15,7 +15,6 @@ public class BasicSocket {
             var pid = ProcessHandle.current().pid();
             System.out.println("PID: " + pid);
             while (true) {
-
             }
         }
     }

@@ -1,4 +1,4 @@
-module nettest
+module netsample
 
 go 1.21.0
 

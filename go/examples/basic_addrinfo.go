@@ -1,4 +1,4 @@
-package main
+package examples
 
 import (
 	"fmt"
@@ -6,7 +6,7 @@ import (
 )
 
 
-func addressInfo() {
+func AddressInfo() {
 	hostname := "example.com"
 	
 	ips, err := net.LookupIP(hostname)

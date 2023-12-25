@@ -1,4 +1,4 @@
-package main
+package examples
 
 import (
 	"errors"
@@ -11,7 +11,7 @@ import (
 )
 
 
-func basicSocket() {
+func BasicSocket() {
 	hostname := "example.com"
 	
 	ips, err := net.LookupIP(hostname)
