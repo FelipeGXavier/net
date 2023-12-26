@@ -6,9 +6,16 @@
 #include <arpa/inet.h>
 #include <cerrno>   
 
+void handleSocketError(int status, std::string context) {
+    if (status == -1) {
+        std::cerr << "Socket error: " << context << " " << gai_strerror(status) << std::endl;
+        exit(1);
+    }
+}
+
 int main() {
     const char *hostname = "localhost";
-    const char *port = "http";
+    const char *port = "3090";
 
     struct addrinfo hints, *result, *p;
 
