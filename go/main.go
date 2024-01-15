@@ -3,5 +3,6 @@ package main
 import "netsample/examples"
 
 func main() {
-	examples.Client()
+	// examples.UdpServer()
+	examples.UdpClient()
 }
